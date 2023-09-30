@@ -65,6 +65,8 @@
     "start": "node ./bin/server.js",
     "start:file": "node ./bin/server.js -c config/file.json -f ./data",
     "start:file-no-setup": "node ./bin/server.js -c config/file-no-setup.json -f ./data",
+    "start:nosec:oidc": "node ./bin/server.js -c config/no-security-oidp-config.json -f ./data/nosec-oidc -p 9001",
+    "start:oidc": "node ./bin/server.js -c config/oidp-config.json -f ./data/oidc -p 9001",
     "test": "npm run test:ts && npm run jest",
     "test:deploy": "test/deploy/validate-configs.sh",
     "test:ts": "tsc -p test --noEmit",
